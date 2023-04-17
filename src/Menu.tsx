@@ -2,11 +2,11 @@
 const Menu = () => {
     return (
         <div className="menu">
-            <div className="menuSection">
-                <div className="menuSectionTitle">Section 1</div>
-                <div className="menuSectionItem">Item 1</div>
-                <div className="menuSectionItem">Item 2</div>
-                <div className="menuSectionItem">Item 3</div>
+            <div className="menuNavigationContainer">
+                <div className="menuSectionItem">Home</div>
+                <div className="menuSectionItem">About Us</div>
+                <div className="menuSectionItem">Products</div>
+                <div className="menuSectionItem">Services</div>
             </div>
         </div>
     );

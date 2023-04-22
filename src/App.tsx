@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import './App.css';
 import Menu from './Menu';
@@ -6,14 +6,12 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import ProductsPage from './ProductsPage';
 import ServicesPage from './ServicesPage';
+import ContactPage from './ContactPage';
 import Dropdown from './Dropdown';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pageState, setPageState] = useState('home');
 
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   let currentPage = (<></>);
 
@@ -29,6 +27,9 @@ function App() {
       break;
     case 'services':
       currentPage = <ServicesPage />;
+      break;
+    case 'contact':
+      currentPage = <ContactPage />;
       break;
     default:
       currentPage = <HomePage />;

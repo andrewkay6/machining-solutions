@@ -164,6 +164,16 @@ body{
   width: 100%;
   height: 100%;
   box-sizing: border-box; 
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.productImageContainer{
+  max-width: 30%;
+}
+.productImage{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .menuBreak{

@@ -1,6 +1,7 @@
 import { Product } from './Product';
-import bearingsAndBushings from './images/bearingsandbushings.gif';
-
+import bearingsAndBushings from './images/graphite_bearings_and_bushings.gif';
+import graphiteRods from './images/graphite_rods.gif';
+import graphiteCrucible from './images/graphite_crucible.gif';
 
 
 const productsList: Array<Product> = [
@@ -21,7 +22,7 @@ const productsList: Array<Product> = [
     image: bearingsAndBushings
   },
   {
-    name: "Product 2",
+    name: "Bulk Rods & Material",
     information: [
       'Custom plates and rods made to order',
       'Available in a wide variety of sizes and lengths',
@@ -29,11 +30,11 @@ const productsList: Array<Product> = [
       'Available in most required surface finishes',
       'Next day delivery available on standard sizes'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: graphiteRods
   }
   ,
   {
-    name: "Product 3",
+    name: "Continuous Casting Dies",
     information: [
       'Low surface wetting with most molten metals',
       'High thermal and chemical resistance',
@@ -47,7 +48,7 @@ const productsList: Array<Product> = [
   }
   ,
   {
-    name: "Product 4",
+    name: "Crucibles",
     information: [
       'Minimal thermal expansion',
       'Resistant to thermal shock',
@@ -59,11 +60,11 @@ const productsList: Array<Product> = [
       'Jewellery manufacturing',
       'Available in any custom size and capacity'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: graphiteCrucible
   }
   ,
   {
-    name: "Product 5",
+    name: "Electrical Contacts",
     information: [
       'Excellent electrical conductivity',
       'Resistant to thermal shock',
@@ -77,7 +78,7 @@ const productsList: Array<Product> = [
   }
   ,
   {
-    name: "Product 6",
+    name: "Glass Moulds & Tools",
     information: [
       'Push moulds, marble moulds and custom moulds',
       'Custom made glass tools',
@@ -90,7 +91,7 @@ const productsList: Array<Product> = [
   }
   ,
   {
-    name: "Product 7",
+    name: "Graphite Powder",
     information: [
       'High lubricity without the need for oil and grease',
       'Available in a wide variety of mesh sizes',
@@ -102,7 +103,7 @@ const productsList: Array<Product> = [
   }
   ,
   {
-    name: "Product 8",
+    name: "Hobby Casting",
     information: [
       'Casting moulds for model trains, airplanes, cars and figurines',
       'Custom made casting tools',
@@ -112,7 +113,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 9",
+    name: 'Impellers & Mixers',
     information: [
       'Available in oxidation retardant grades for high heat applications',
       'Resistant to thermal shock',
@@ -124,7 +125,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 10",
+    name: 'Jewellery Moulds & Tools',
     information: [
       'Brazing plates',
       'Casting moulds',
@@ -136,7 +137,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 11",
+    name: "Moulds, Boats & Trays",
     information: [
       'Used to melt alloys or to hold and form molten metal',
       'Used for sintering trays or casting moulds',
@@ -148,7 +149,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 12",
+    name: "Oilless Bushings",
     information: [
       'Bronze bushing inset with graphite pins',
       'Self lubricating',
@@ -161,7 +162,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 13",
+    name: "Pump Vanes",
     information: [
       'Vanes for dry-running rotary compressors and wet running vane pumps',
       'Resistant to thermal shock',
@@ -172,7 +173,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 14",
+    name: "Research and Development",
     information: [
       'Supporting research through Canadian Universities and Colleges',
       'Product and process development partner in several fields including solar, metallurgy, molten metals, pulp and paper and motion control',
@@ -181,7 +182,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 15",
+    name: "Seals",
     information: [
       'Ball Valve Seals',
       'Steam Joints',
@@ -198,7 +199,7 @@ const productsList: Array<Product> = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    name: "Product 16",
+    name: "Segmented Seals",
     information: [
       'Segmented Piston and Guide Ring assemblies available',
       'Unlimited number of possible segments',

@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { ReactComponent as MenuIcon } from './images/menu.svg';
 import headerImage from './images/header.png';
-import Menu from "./Menu";
-import Dropdown from "./Dropdown";
 
 interface Props {
     setIsMenuOpen: (isMenuOpen: boolean) => void;

@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import {Product} from "./Product";
 
 interface Props {
     product: Product;
 }
 const ProductEntry = ({product} : Props) => {
+    const [isSelected, setIsSelected] = useState(false);
+
     return (
         <div className="productContainer">
             <div className="productImageContainer">

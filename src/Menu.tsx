@@ -10,9 +10,11 @@ interface Props {
   isMenuOpen: boolean;
   setPageState: (pageState: string) => void;
   pageState: string;
+  isMenuAnimating: boolean;
+  setIsMenuAnimating : (isMenuAnimating: boolean) => void;
 }
 
-const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => {
+const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState, isMenuAnimating, setIsMenuAnimating }: Props) => {
   const menuItems = [
     [
       { name: "Home", pageState: "home" },
@@ -46,6 +48,7 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
   useEffect(() => {
     if (isMenuOpen) {
       setMenuDisplay("block");
+      setIsMenuAnimating(true);
     }
   }, [isMenuOpen]);
 
@@ -56,12 +59,14 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
       onTransitionEnd={() => {
         if (!isMenuOpen) {
           setMenuDisplay("none");
+          setIsMenuAnimating(false);
         }
       }}
     >
       {menuItems.map((section, sectionIndex) => {
         return (
-          <div key={`section-${sectionIndex}`}>
+          <div className='menuSectionContainer'
+          key={`section-${sectionIndex}`}>
             {section.map((item, index) => {
               return (
                 <div className={getButtonClassName(item)} key={index}>

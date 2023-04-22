@@ -14,7 +14,7 @@ interface Props {
   setIsMenuAnimating : (isMenuAnimating: boolean) => void;
 }
 
-const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState, isMenuAnimating, setIsMenuAnimating }: Props) => {
+const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => {
   const menuItems = [
     [
       { name: "Home", pageState: "home" },
@@ -48,7 +48,6 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState, isMenuAnimat
   useEffect(() => {
     if (isMenuOpen) {
       setMenuDisplay("block");
-      setIsMenuAnimating(true);
     }
   }, [isMenuOpen]);
 
@@ -59,7 +58,6 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState, isMenuAnimat
       onTransitionEnd={() => {
         if (!isMenuOpen) {
           setMenuDisplay("none");
-          setIsMenuAnimating(false);
         }
       }}
     >

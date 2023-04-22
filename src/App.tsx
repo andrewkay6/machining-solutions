@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import './App.css';
 import Menu from './Menu';
@@ -48,7 +48,7 @@ function App() {
   return (
 
     <div className='appContainer'>
-      <div className='headerAndDropdownContainer'>
+
 
         <Header
           setIsMenuOpen={setIsMenuOpen}
@@ -70,7 +70,7 @@ function App() {
             />
           }
         />
-      </div>
+
       <div className={appContentClassName}>
         {currentPage}
       </div>

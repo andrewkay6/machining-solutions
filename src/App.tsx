@@ -8,11 +8,13 @@ import ProductsPage from './ProductsPage';
 import ServicesPage from './ServicesPage';
 import ContactPage from './ContactPage';
 import Dropdown from './Dropdown';
+import Footer from './Footer';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pageState, setPageState] = useState('home');
   const [isMenuAnimating, setIsMenuAnimating] = useState(false);
   const [appContentClassName, setAppContentClassName] = useState('appContentContainer');
+  const [footerClassName, setFooterClassName] = useState('footerContainer');
 
   let currentPage = (<></>);
 
@@ -40,8 +42,10 @@ function App() {
   useEffect(() => {
     if (isMenuOpen) {
       setAppContentClassName('appContentContainer displayNone');
+      setFooterClassName('footerContainer displayNone');
     } else {
       setAppContentClassName('appContentContainer');
+      setFooterClassName('footerContainer');
     }
   }, [isMenuOpen]);
 
@@ -74,7 +78,8 @@ function App() {
       <div className={appContentClassName}>
         {currentPage}
       </div>
-
+    
+    <Footer className={footerClassName}/>
     </div>
 
   );

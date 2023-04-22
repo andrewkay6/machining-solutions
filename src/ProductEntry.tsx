@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Product } from "./Product";
-
 interface Props {
     product: Product;
 }
 
 const ProductEntry = ({ product }: Props) => {
     const [isExpanded, setIsExpanded] = useState(false);
-    
+
     const [productContainerClassName, setProductContainerClassName] = useState(
         "productContainerClosed"
     );
@@ -26,7 +25,7 @@ const ProductEntry = ({ product }: Props) => {
     };
     let productEntryContents = (<></>);
     const name = (
-            <div className="productName">{product.name}</div>
+        <div className="productName">{product.name}</div>
 
     );
     const information = (
@@ -45,18 +44,18 @@ const ProductEntry = ({ product }: Props) => {
 
     if (isExpanded) {
         productEntryContents = (
-            <>
-                {name}
-                {image}
-                {information}
-            </>
+                <>
+                    {image}
+                    {name}
+                    {information}
+                </>
         );
     } else {
         productEntryContents = (
-            <>  
+            <>
                 {image}
                 {name}
-                
+
             </>
         );
     }

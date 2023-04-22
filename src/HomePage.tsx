@@ -1,7 +1,7 @@
 
 const Home = () => {
     return (
-        <div id="contenttext">
+        <div id="contenttext" className="page">
             <p><strong>
             </strong></p><h1><strong>CNC Machining Toronto – Graphite Machining</strong></h1><strong>
             </strong>

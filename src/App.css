@@ -1,7 +1,11 @@
+
+
 html {
   font-family: 'Open Sans';
 }
-
+:root{
+  --headerColor : rgb(231, 240, 250);
+}
 .appContainer {
   width: 100%;
   display: flex;
@@ -17,7 +21,7 @@ body{
 .headerContainer {
   width: 100%;
   /* background: linear-gradient(to bottom, rgb(185, 235, 255), rgb(148, 201, 223)); */
-  background-color: rgb(231, 240, 250);
+  background-color: var(--headerColor);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,7 +30,7 @@ body{
   /* height: 10vh; */
   box-sizing: border-box;
   flex-wrap: wrap;
-  
+  transition: height 0.3s ease;
   
   
 }
@@ -35,7 +39,6 @@ body{
   max-width: 80%;
   min-width: 80%;
   width: 80%;
-  max-height: 100%;
   height: auto;
   display: flex;
   justify-content: left;
@@ -45,8 +48,7 @@ body{
 }
 
 .headerImage {
-  height: auto;
-  max-height: 20vh;
+  max-height: 200px;
   max-width: 100%;
   object-fit: contain;
 }
@@ -65,7 +67,6 @@ body{
 
 .headerMenuContainer{
   all: unset;
-  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -79,8 +80,9 @@ body{
 .menuIcon {
   height: auto;
   max-height: 3vh;
-   width: auto;
+  width: auto;
   align-self: center;
+  cursor: pointer;
 }
 .menuIcon path{
   fill: #05487F;
@@ -95,11 +97,11 @@ body{
   font-size: 120%;
 }
 
-
-
-
 .appContentContainer {
-  overflow: auto;
+  overflow: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .dropdown {
   margin-right: 2%;
@@ -107,24 +109,22 @@ body{
   justify-content: right;
   align-items: right;
   text-align: right;
+  display: flex;
+  background-color: var(--headerColor);
+  height: 100%;
 }
-.menuContainer{
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
-}
-.dropdownOpen, .menuContainerOpen{
+ .dropdownOpen, .menuContainerOpen{
   opacity: 1;
   visibility: visible;
   transform: translateY(0%);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
 }
-.dropdownClosed, .menuContainerClosed{
+ .dropdownClosed, .menuContainerClosed{
   opacity: 0;
   transform: translateY(-100%);
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
-}
-
+} 
 
 .menuItemButton{ 
   all: unset;
@@ -141,4 +141,33 @@ body{
 .menuItemButton:hover,
 .menuItemSelected{
   font-weight: bold;
+}
+
+.page{
+    max-width: 768px;
+}
+.productsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; 
+  max-width: 768px;
+}
+.productContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; 
+}
+
+.menuBreak{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
 }

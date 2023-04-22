@@ -6,8 +6,13 @@ interface Props {
 }
 const ProductEntry = ({product} : Props) => {
     return (
-        <div>
-        <h1>Product Entry</h1>
+        <div className="productContainer">
+            <div className="productImageContainer">
+                <img src={product.image} alt="Product" className="productImage" />
+            </div>
+            <div className="productTextContainer">
+                <div className="productName">{product.name}</div>
+            </div>
         </div>
     );
     };

@@ -6,9 +6,14 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import ProductsPage from './ProductsPage';
 import ServicesPage from './ServicesPage';
+import Dropdown from './Dropdown';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pageState, setPageState] = useState('home');
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   let currentPage = (<></>);
 
@@ -41,6 +46,17 @@ function App() {
         pageState={pageState}
         setPageState={setPageState}
       />
+      <Dropdown
+        handleClose={() => setIsMenuOpen(false)}
+        showDropdownWindow={isMenuOpen}
+        children={<Menu
+            setIsMenuOpen={setIsMenuOpen}
+            isMenuOpen={isMenuOpen}
+            pageState={pageState}
+            setPageState={setPageState}
+            
+        />}
+    />
       <div className="appContentContainer">
         {currentPage}
       </div>

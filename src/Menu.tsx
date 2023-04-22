@@ -49,7 +49,6 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
         }
       }}
     >
-
         {menuItems.map((item, index) => {
           return (
             <div className={getButtonClassName(item)} key={index}>
@@ -65,6 +64,7 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
             </div>
           );
         })}
+        <div className="menuBreak" />
       </div>
   );
 };

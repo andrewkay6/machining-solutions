@@ -13,35 +13,36 @@ interface Props {
 
 const Header = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => {
     
+    const [headerContainerClassName, setHeaderContainerClassName] = useState("headerContainer");
+    
     const handleMenuClick = () => {
-        setIsMenuOpen(!isMenuOpen);
-        console.log(isMenuOpen);
+            setIsMenuOpen(!isMenuOpen);
     };
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            setHeaderContainerClassName("headerContainer headerContainerOpen");
+        } else {
+            setHeaderContainerClassName("headerContainer headerContainerClosed");
+        }
+    }, [isMenuOpen]);
 
 
     return (
-        <div className="headerContainer">
+        <>
+        <div className={headerContainerClassName}>
             <div className="headerImageContainer">
                 <img src={headerImage} alt="Header" className="headerImage" />
             </div>
-            <button className={"headerMenuContainer"}
+            <div className={"headerMenuContainer"}
+                >
+                <MenuIcon 
                 onClick={handleMenuClick}
-                disabled={isMenuOpen}>
-                <MenuIcon className="menuIcon" />
-            </button>
-            <Dropdown
-                handleClose={() => setIsMenuOpen(false)}
-                showDropdownWindow={isMenuOpen}
-                children={<Menu
-                    setIsMenuOpen={setIsMenuOpen}
-                    isMenuOpen={isMenuOpen}
-                    pageState={pageState}
-                    setPageState={setPageState}
-                    
-                />}
-            />
-            {/* <Menu/> */}
+                className="menuIcon" />
+            </div>
         </div>
+        
+    </>
     );
 };
 

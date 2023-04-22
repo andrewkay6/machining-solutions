@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div id="contenttext"><strong>ABOUT 
+        <div id="contenttext" className="page"><strong>ABOUT 
       US </strong><br/>
       <p >Founded 
         in 2009 to provide finished carbon and graphite parts to the underserviced 

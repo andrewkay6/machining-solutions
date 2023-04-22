@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import {Link, useNavigate} from 'react-router-dom';
 interface Page {
   name: string;
   pageState: string;
@@ -10,11 +10,10 @@ interface Props {
   isMenuOpen: boolean;
   setPageState: (pageState: string) => void;
   pageState: string;
-  isMenuAnimating: boolean;
-  setIsMenuAnimating : (isMenuAnimating: boolean) => void;
 }
 
 const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => {
+  const navigate = useNavigate();
   const menuItems = [
     [
       { name: "Home", pageState: "home" },
@@ -68,15 +67,15 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
             {section.map((item, index) => {
               return (
                 <div className={getButtonClassName(item)} key={index}>
-                  <button
+                  <Link
                     className="menuItemButton"
+                    to={`/${item.pageState}`}
                     onClick={() => {
-                      setPageState(item.pageState);
                       setIsMenuOpen(false);
                     }}
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 </div>
               );
             })}

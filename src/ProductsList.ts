@@ -2,6 +2,19 @@ import { Product } from './Product';
 import bearingsAndBushings from './images/graphite_bearings_and_bushings.gif';
 import graphiteRods from './images/graphite_rods.gif';
 import graphiteCrucible from './images/graphite_crucible.gif';
+import electricalContacts from './images/graphite_electric_contact.gif';
+import continuousCastingDies from './images/graphite_dies.gif';
+import glassMouldsTools from './images/graphite_glass_tools.gif';
+import hobbyCasting from './images/graphite_hobby.gif';
+import impellersMixers from './images/graphite_impeller.gif';
+import jewelleryMouldsTools from './images/graphite_jewelry.gif';
+import mouldsBoatsTrays from './images/graphite_mould.gif';
+import oillessBushings from './images/graphite_oilless.gif';
+import pumpVanes from './images/graphite_pump_vanes.gif';
+import researchDevelopment from './images/graphite_r_and_d.gif';
+import seals from './images/graphite_seals.gif';
+import segmentedSeals from './images/graphite_seg_seal.gif';
+import graphitePowder from './images/graphite_powder.gif';
 
 
 const productsList: Array<Product> = [
@@ -44,7 +57,7 @@ const productsList: Array<Product> = [
       'Good lubrication and friction properties',
       'Custom manufactured to any shape and style'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: continuousCastingDies
   }
   ,
   {
@@ -74,7 +87,7 @@ const productsList: Array<Product> = [
       'Jigs and fixtures or soldering and brazing',
       'Available in any custom design'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: electricalContacts
   }
   ,
   {
@@ -87,7 +100,7 @@ const productsList: Array<Product> = [
       'Unlike our competitors, no order is too small',
       'We also sell feed stock by the cubic inch for the do-it-yourselfer’s'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: glassMouldsTools
   }
   ,
   {
@@ -99,7 +112,7 @@ const productsList: Array<Product> = [
       'Top sheet insulator for molten metal holding',
       'Available in any quantity based on availability'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: graphitePowder
   }
   ,
   {
@@ -110,7 +123,7 @@ const productsList: Array<Product> = [
       'Unlike our competitors, no order is too small',
       'We also sell feed stock by the cubic inch to make your own custom casting moulds'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: hobbyCasting
   },
   {
     name: 'Impellers & Mixers',
@@ -122,7 +135,7 @@ const productsList: Array<Product> = [
       'Strength of impeller increases as temperature increases',
       'Available in any custom shape, size or style'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: impellersMixers
   },
   {
     name: 'Jewellery Moulds & Tools',
@@ -134,7 +147,7 @@ const productsList: Array<Product> = [
       'Unlike our competitors, no order is too small',
       'We also sell feed stock by the cubic inch for the do-it-yourselfer’s'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: jewelleryMouldsTools
   },
   {
     name: "Moulds, Boats & Trays",
@@ -146,7 +159,7 @@ const productsList: Array<Product> = [
       'Non-wetting with most molten metals',
       'Available in any custom size and capacity'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: mouldsBoatsTrays
   },
   {
     name: "Oilless Bushings",
@@ -159,7 +172,7 @@ const productsList: Array<Product> = [
       'High durability',
       'Available in custom sizes and custom alloys'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: oillessBushings
   },
   {
     name: "Pump Vanes",
@@ -170,7 +183,7 @@ const productsList: Array<Product> = [
       'Operate efficiently in air as well as submersed in liquid',
       'Available in any custom shape and size'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: pumpVanes
   },
   {
     name: "Research and Development",
@@ -179,7 +192,7 @@ const productsList: Array<Product> = [
       'Product and process development partner in several fields including solar, metallurgy, molten metals, pulp and paper and motion control',
       'Support joint research ventures between industry and post-secondary institutions'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: researchDevelopment
   },
   {
     name: "Seals",
@@ -196,7 +209,7 @@ const productsList: Array<Product> = [
       'Won’t burn or oxidize below 700°F',
       'Available in any custom size and design'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: seals
   },
   {
     name: "Segmented Seals",
@@ -209,7 +222,7 @@ const productsList: Array<Product> = [
       'Imparts a high temperature, solid lubricating film to moving parts',
       'Available in any custom design'
     ],
-    image: 'https://via.placeholder.com/150'
+    image: segmentedSeals
   }
 
 ]

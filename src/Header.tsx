@@ -1,6 +1,6 @@
-import React, {useEffect} from "react";
-import { ReactComponent as MenuIcon } from './menu.svg';
-import headerImage from './header.png';
+import React, {useEffect, useState} from "react";
+import { ReactComponent as MenuIcon } from './images/menu.svg';
+import headerImage from './images/header.png';
 import Menu from "./Menu";
 import Dropdown from "./Dropdown";
 
@@ -12,21 +12,12 @@ interface Props {
 }
 
 const Header = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => {
+    
     const handleMenuClick = () => {
         setIsMenuOpen(!isMenuOpen);
         console.log(isMenuOpen);
     };
 
-    useEffect(() => {
-        if (!isMenuOpen) {
-            //Create close menu animation
-            
-            
-        } else {
-            //Create open menu animation
-        }
-
-    }, [isMenuOpen]);
 
     return (
         <div className="headerContainer">
@@ -46,6 +37,7 @@ const Header = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) =
                     isMenuOpen={isMenuOpen}
                     pageState={pageState}
                     setPageState={setPageState}
+                    
                 />}
             />
             {/* <Menu/> */}

@@ -30,7 +30,7 @@ const Dropdown = ({ handleClose, showDropdownWindow, children }: Props) => {
         };
     }, [dropdownRef, handleClose, showDropdownWindow]);
 
-    const showHideClassName = showDropdownWindow ? "dropdown" : "dropdown displayNone";
+    const showHideClassName = showDropdownWindow ? "dropdown dropdownOpen" : "dropdown dropdownClosed";
 
     return (
         <div className={showHideClassName}>

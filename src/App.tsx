@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import './App.css';
 import Menu from './Menu';
-import Home from './Home';
-import About from './About';
-import Products from './Products';
-import Services from './Services';
+import HomePage from './HomePage';
+import AboutPage from './AboutPage';
+import ProductsPage from './ProductsPage';
+import ServicesPage from './ServicesPage';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pageState, setPageState] = useState('home');
@@ -14,19 +14,19 @@ function App() {
 
   switch (pageState) {
     case 'home':
-      currentPage = <Home />;
+      currentPage = <HomePage />;
       break;
     case 'about':
-      currentPage = <About />;
+      currentPage = <AboutPage />;
       break;
     case 'products':
-      currentPage = <Products />;
+      currentPage = <ProductsPage />;
       break;
     case 'services':
-      currentPage = <Services />;
+      currentPage = <ServicesPage />;
       break;
     default:
-      currentPage = <Home />;
+      currentPage = <HomePage />;
       break;
   }
 

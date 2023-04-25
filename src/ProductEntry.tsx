@@ -43,6 +43,16 @@ const ProductEntry = ({ product }: Props) => {
             <img src={product.image} alt="Product" className="productImage" />
         </div>
     )
+    const showMore = (
+        <div className="showMoreContainer">
+            <div className="showMoreText">
+                More info
+            </div>
+            <i className="arrow down"/>
+        </div>    
+        
+            
+    )
 
     if (isExpanded) {
         productEntryContents = (
@@ -57,6 +67,7 @@ const ProductEntry = ({ product }: Props) => {
             <>
                 {image}
                 {name}
+                {showMore}
 
             </>
         );
@@ -66,7 +77,15 @@ const ProductEntry = ({ product }: Props) => {
         <div className={productContainerClassName} onClick={handleExpand}>
             {productEntryContents}
             {isExpanded && (
-                <button onClick={handleCollapse}>See less</button>
+                <div className="seeLessContainer" onClick={handleCollapse}>
+                    {/* <button onClick={handleCollapse}>
+                    See less
+                    </button>  */}
+                    <i className="arrow up"/>
+                    <div className="seeLessText">
+                        Hide
+                    </div>
+                </div>
             )}
         </div>
     );

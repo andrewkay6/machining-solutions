@@ -15,21 +15,25 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pageState, setPageState] = useState('');
   const [appContentClassName, setAppContentClassName] = useState('appContentContainer');
+  const [appContainerClassName, setAppContainerClassName] = useState('appContainer');
   const [footerClassName, setFooterClassName] = useState('footerContainer');
 
   useEffect(() => {
     if (isMenuOpen) {
       setAppContentClassName('appContentContainer displayNone');
       setFooterClassName('footerContainer displayNone');
+      setAppContainerClassName('appContainer appContainerOpen');
+
     } else {
       setAppContentClassName('appContentContainer');
       setFooterClassName('footerContainer');
+      setAppContainerClassName('appContainer appContainerClosed');
     }
   }, [isMenuOpen]);
 
   return (
     <Router>
-      <div className="appContainer">
+      <div className={appContainerClassName}>
         <Header
           setIsMenuOpen={setIsMenuOpen}
           isMenuOpen={isMenuOpen}
@@ -59,7 +63,7 @@ function App() {
           </Routes>
         </div>
 
-        {/* <Footer className={footerClassName} /> */}
+        <Footer className={footerClassName} />
       </div>
     </Router>
   );

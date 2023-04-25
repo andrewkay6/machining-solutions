@@ -16,7 +16,7 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
   const navigate = useNavigate();
   const menuItems = [
     [
-      { name: "Home", pageState: "home" },
+      { name: "Home", pageState: "" },
       { name: "About Us", pageState: "about" },
       { name: "Products", pageState: "products" },
       { name: "Services", pageState: "services" },
@@ -72,6 +72,7 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
                     to={`/${item.pageState}`}
                     onClick={() => {
                       setIsMenuOpen(false);
+                      setPageState(item.pageState);
                     }}
                   >
                     {item.name}

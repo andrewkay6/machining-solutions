@@ -25,7 +25,9 @@ const ProductEntry = ({ product }: Props) => {
     };
     let productEntryContents = (<></>);
     const name = (
-        <div className="productName">{product.name}</div>
+        <div className="productName">
+            {product.name}
+        </div>
 
     );
     const information = (

@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [pageState, setPageState] = useState('home');
+  const [pageState, setPageState] = useState('');
   const [appContentClassName, setAppContentClassName] = useState('appContentContainer');
   const [footerClassName, setFooterClassName] = useState('footerContainer');
 
@@ -59,7 +59,7 @@ function App() {
           </Routes>
         </div>
 
-        <Footer className={footerClassName} />
+        {/* <Footer className={footerClassName} /> */}
       </div>
     </Router>
   );

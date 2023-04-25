@@ -9,7 +9,7 @@ import hobbyCasting from './images/graphite_hobby.gif';
 import impellersMixers from './images/graphite_impeller.gif';
 import jewelleryMouldsTools from './images/graphite_jewelry.gif';
 import mouldsBoatsTrays from './images/graphite_mould.gif';
-import oillessBushings from './images/graphite_oilless.gif';
+// import oillessBushings from './images/graphite_oilless.gif';
 import pumpVanes from './images/graphite_pump_vanes.gif';
 import researchDevelopment from './images/graphite_r_and_d.gif';
 import seals from './images/graphite_seals.gif';
@@ -161,19 +161,19 @@ const productsList: Array<Product> = [
     ],
     image: mouldsBoatsTrays
   },
-  {
-    name: "Oilless Bushings",
-    information: [
-      'Bronze bushing inset with graphite pins',
-      'Self lubricating',
-      'Used in applications where traditional lubrication can’t be used',
-      'Reduce or eliminate need for other lubricants',
-      'Long life',
-      'High durability',
-      'Available in custom sizes and custom alloys'
-    ],
-    image: oillessBushings
-  },
+  // {
+  //   name: "Oilless Bushings",
+  //   information: [
+  //     'Bronze bushing inset with graphite pins',
+  //     'Self lubricating',
+  //     'Used in applications where traditional lubrication can’t be used',
+  //     'Reduce or eliminate need for other lubricants',
+  //     'Long life',
+  //     'High durability',
+  //     'Available in custom sizes and custom alloys'
+  //   ],
+  //   image: oillessBushings
+  // },
   {
     name: "Pump Vanes",
     information: [

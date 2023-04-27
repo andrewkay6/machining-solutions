@@ -1,32 +1,11 @@
-import React from "react";
 import menuItems from "./MenuItems";
 import { Link } from "react-router-dom";
 
-interface Page {
-  name: string;
-  pageState: string;
-}
 
-interface Props {
-  setIsMenuOpen: (isMenuOpen: boolean) => void;
-  isMenuOpen: boolean;
-  setPageState: (pageState: string) => void;
-  pageState: string;
-}
+interface Props {setPageState: (pageState: string) => void;}
 
-const HeaderBar = ({
-  setIsMenuOpen,
-  isMenuOpen,
-  setPageState,
-  pageState,
-}: Props) => {
-  const getButtonClassName = (item: Page) => {
-    if (item.pageState === pageState) {
-      return "menuItemButton menuItemSelected";
-    } else {
-      return "menuItemButton";
-    }
-  };
+const HeaderBar = ({setPageState}: Props) => {
+ 
 
   // Flatten the nested menuItems array
   const flattenedMenuItems = menuItems.reduce(

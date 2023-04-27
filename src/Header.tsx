@@ -33,12 +33,7 @@ const Header = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) =
                 <img src={headerImage} alt="Header" className="headerImage" />
             </div>
             <div className="headerBarContainer">
-                <HeaderBar
-                    setIsMenuOpen={setIsMenuOpen}
-                    isMenuOpen={isMenuOpen}
-                    setPageState={setPageState}
-                    pageState={pageState}
-                />
+                <HeaderBar setPageState={setPageState}/>
             </div>
 
             <div className={"headerMenuContainer"}>

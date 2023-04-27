@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {Link, useNavigate} from 'react-router-dom';
+import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom';
 import menuItems from "./MenuItems";
 interface Page {
   name: string;
@@ -64,8 +64,7 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
                       setPageState(item.pageState);
                     }}
                   >
-                      <span className="linkTextHeader">{item.name}</span>
-
+                      <span className="linkText">{item.name}</span>
                   </Link>
                 </div>
               );

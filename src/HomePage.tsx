@@ -1,10 +1,16 @@
+import { useEffect } from 'react';
+import {motion} from 'framer-motion'
+const HomePage = () => {
 
-const Home = () => {
     return (
-        <div id="contenttext" className="page">
-            <p><strong>
-            </strong></p><h1><strong>CNC Machining Toronto – Graphite Machining</strong></h1><strong>
-            </strong>
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ 
+            opacity: 1 ,
+            minHeight: "0vh"}}
+            exit={{ display: "none" }}
+        className="page">
+            <div className="pageTitle">CNC Machining Toronto – Graphite Machining</div>
             <p><strong></strong></p><strong>CNC graphite machining facility located in
                 Kitchener and serving the greater Toronto area and beyond. Custom machining
                 of all sizes carbon, graphite, nylon, Delrin and bronze parts. <p></p>
@@ -45,8 +51,8 @@ const Home = () => {
                 <p ><br/>
                 </p>
             </strong>
-        </div>
+        </motion.div>
     );
 }
 
-export default Home;
+export default HomePage;

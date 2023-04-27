@@ -1,10 +1,18 @@
 import productsList from "./ProductsList";
 import ProductEntry from "./ProductEntry";
+import { motion } from "framer-motion";
 
 const ProductsPage = () => {
 
     return (    
-            <div className="productsContainer page">
+            <motion.div className="productsContainer page"
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                minHeight: "0vh"
+            }}
+            exit={{ display: "none"}}
+        >
                 <div className="pageTitle">
                     Products
                 </div>
@@ -14,7 +22,7 @@ const ProductsPage = () => {
                         <ProductEntry product={product} key={index} />
                     );
                 })}
-            </div>  
+            </motion.div>  
     );
 };
 

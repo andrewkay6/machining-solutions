@@ -1,7 +1,15 @@
+import { motion } from "framer-motion";
 
 const ServicesPage = () => {
     return (
-        <div className="page">
+        <motion.div className="page"
+        initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                minHeight: "0vh"
+            }}
+            exit={{ display: "none" }}
+        >
           <div className="pageTitle">Services</div> 
           <p ><strong>Custom 
         Machining</strong><br/>
@@ -31,7 +39,7 @@ const ServicesPage = () => {
       <p ><br/>
       </p>
       
-      </div>
+      </motion.div>
       
     );
 };

@@ -1,7 +1,14 @@
-
+import { motion } from 'framer-motion'
 const ContactPage = () => {
     return (
-        <div className="contactContainer page">
+        <motion.div className="contactContainer page"
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                minHeight: "0vh"
+            }}
+            exit={{ display: "none" }}
+        >
             <div className="pageTitle"> Contact </div>
             <div className="contactInfoContainer">
                 <ul className="contactInfo">
@@ -16,12 +23,12 @@ const ContactPage = () => {
                     <li>
                         Mail:
                         70 Dumart Place
-                        Kitchener, Ontario, Canada 
+                        Kitchener, Ontario, Canada
                         N2K 3C7
                     </li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

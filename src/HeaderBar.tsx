@@ -38,15 +38,14 @@ const HeaderBar = ({
     <>
       {flattenedMenuItems.map((item, index) => {
         return (
-          <div className={"menuItemButton"} key={index}>
+          <div className="menuItemButton" key={index}>
             <Link
-              className="menuItemButton"
               to={`/${item.pageState}`}
               onClick={() => {
                 setPageState(item.pageState);
               }}
             >
-              {item.name}
+              <span className="linkText">{item.name}</span>
             </Link>
           </div>
         );

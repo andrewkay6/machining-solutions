@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './Header';
 import './App.css';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
-import ProductsPage from './ProductsPage';
-import ServicesPage from './ServicesPage';
-import ContactPage from './ContactPage';
+import AnimatedRoutes from './AnimatedRoutes';
 import Dropdown from './Dropdown';
 import Footer from './Footer';
 import Menu from './Menu';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +13,20 @@ function App() {
   const [appContentClassName, setAppContentClassName] = useState('appContentContainer');
   const [appContainerClassName, setAppContainerClassName] = useState('appContainer');
   const [footerClassName, setFooterClassName] = useState('footerContainer');
+
+  const handleResize = () => {
+    if (window.innerWidth >= 1024) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -54,13 +64,7 @@ function App() {
         />
 
         <div className={appContentClassName}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
+          <AnimatedRoutes/>
         </div>
 
         <Footer className={footerClassName} />

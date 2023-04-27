@@ -64,7 +64,8 @@ const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => 
                       setPageState(item.pageState);
                     }}
                   >
-                    {item.name}
+                      <span className="linkTextHeader">{item.name}</span>
+
                   </Link>
                 </div>
               );

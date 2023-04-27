@@ -1,7 +1,16 @@
+import { motion } from "framer-motion";
+
 
 const About = () => {
     return (
-        <div className="page">
+        <motion.div className="page"
+        initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                minHeight: "0vh"
+            }}
+            exit={{ display: "none" }}
+        >
           <div className="pageTitle">
             About Us
           </div>
@@ -25,7 +34,7 @@ const About = () => {
       <strong>Fair 
         pricing, fair labour rates and top notch customer care, that’s the 
         Machining Solutions difference!</strong><br/>
-        </div>
+        </motion.div>
 
       
     );

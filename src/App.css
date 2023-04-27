@@ -116,9 +116,7 @@ body {
   .headerMenuContainer{
     display: none;
   }
-  .dropdownMain {
-    display: none;
-  }
+
   
 }
 @media screen and (max-width: 1023px){
@@ -191,9 +189,8 @@ body {
   padding-bottom: 2%;
 }
 
-.menuItemButton {
+.menuItemButton{
   all: unset;
-  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -203,8 +200,18 @@ body {
   box-sizing: border-box;
   font-size: 130%;
 }
+.menuItemButton a{
+  text-decoration: none;
+}
 
-.menuItemButton:hover,
+.linkText{
+  all: unset;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menuItemButton .linkText:hover,
 .menuItemSelected {
   font-weight: bold;
 }
@@ -418,3 +425,12 @@ body {
   
 
 }
+
+
+
+.pageEnter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
+}
+

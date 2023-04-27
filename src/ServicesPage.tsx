@@ -1,9 +1,9 @@
 
 const ServicesPage = () => {
     return (
-        <div className="page"> 
-            <strong>SERVICES</strong><br/>
-        <p ><strong>Custom 
+        <div className="page">
+          <div className="pageTitle">Services</div> 
+          <p ><strong>Custom 
         Machining</strong><br/>
 
         We offer custom machining of all sizes of carbon, graphite, nylon, Delrin 

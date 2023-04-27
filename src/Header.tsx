@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { ReactComponent as MenuIcon } from './images/menu.svg';
 import headerImage from './images/header.png';
-
+import HeaderBar from "./HeaderBar";
 interface Props {
     setIsMenuOpen: (isMenuOpen: boolean) => void;
     isMenuOpen: boolean;
@@ -32,8 +32,16 @@ const Header = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) =
             <div className="headerImageContainer">
                 <img src={headerImage} alt="Header" className="headerImage" />
             </div>
-            <div className={"headerMenuContainer"}
-                >
+            <div className="headerBarContainer">
+                <HeaderBar
+                    setIsMenuOpen={setIsMenuOpen}
+                    isMenuOpen={isMenuOpen}
+                    setPageState={setPageState}
+                    pageState={pageState}
+                />
+            </div>
+
+            <div className={"headerMenuContainer"}>
                 <MenuIcon 
                 onClick={handleMenuClick}
                 className="menuIcon" />

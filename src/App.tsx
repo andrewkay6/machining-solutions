@@ -20,8 +20,8 @@ function App() {
 
   useEffect(() => {
     if (isMenuOpen) {
-      setAppContentClassName('appContentContainer displayNone');
-      setFooterClassName('footerContainer displayNone');
+      setAppContentClassName('appContentContainer displayOpenMenu');
+      setFooterClassName('footerContainer displayOpenMenu');
       setAppContainerClassName('appContainer appContainerOpen');
 
     } else {

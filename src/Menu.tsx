@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Link, useNavigate} from 'react-router-dom';
+import menuItems from "./MenuItems";
 interface Page {
   name: string;
   pageState: string;
@@ -13,18 +14,6 @@ interface Props {
 }
 
 const Menu = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) => {
-  const navigate = useNavigate();
-  const menuItems = [
-    [
-      { name: "Home", pageState: "" },
-      { name: "About Us", pageState: "about" },
-      { name: "Products", pageState: "products" },
-      { name: "Services", pageState: "services" },
-    ],
-    [
-      { name: "Contact", pageState: "contact" },
-    ],
-  ];
 
   const getButtonClassName = (item: Page) => {
     if (item.pageState === pageState) {

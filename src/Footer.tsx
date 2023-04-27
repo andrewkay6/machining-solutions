@@ -7,10 +7,12 @@ interface Props {
 
 const Footer = ({className} : Props) => {
     
+    const currentYear = new Date().getFullYear();
+
     return (
         <div className={className}>
             <div className="footerText">
-                © 2021, All Rights Reserved
+                © {currentYear} Machining Solutions Inc
             </div>
             <div className="footerContactContainer">
                 <Link

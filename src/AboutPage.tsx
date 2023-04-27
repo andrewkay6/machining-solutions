@@ -1,8 +1,11 @@
 
 const About = () => {
     return (
-        <div id="contenttext" className="page"><strong>ABOUT 
-      US </strong><br/>
+        <div className="page">
+          <div className="pageTitle">
+            About Us
+          </div>
+          
       <p >Founded 
         in 2009 to provide finished carbon and graphite parts to the underserviced 
         Canadian marketplace. Machining Solutions offers over 50 years of experience 

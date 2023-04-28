@@ -442,4 +442,34 @@ body {
   transform: translateY(20px);
   transition: opacity 500ms, transform 500ms;
 }
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.heroImage {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+
+.heroTextContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 400%;
+}

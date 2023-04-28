@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion'
-import facultyPicture from './images/faculty.png'
-import Gears from './Gears';
+import Hero from './Hero';
+// import Gears from './Gears';
 const HomePage = () => {
 
     return (
@@ -10,7 +10,9 @@ const HomePage = () => {
             opacity: 1 ,
             minHeight: "0vh"}}
             exit={{ display: "none" }}
-        className="page">
+        className="page"
+        style={{marginTop: "0"}}>
+            <Hero />
             <div className="pageTitle">CNC Machining Toronto – Graphite Machining</div>
             CNC graphite machining facility located in
                 Kitchener and serving the greater Toronto area and beyond. Custom machining
@@ -20,9 +22,7 @@ const HomePage = () => {
                     to Machining Solutions</strong> Canada's
                         Largest Dedicated Graphite CNC Machining Facility<br/>
                 </p>
-                <div style={{display: "flex", justifyContent: "center"}}>
-                    <img src={facultyPicture} alt="Faculty" width="50%" height="auto"/>
-                </div>
+                
                 <p ><br/>
                     Whether you are looking for production of custom CNC machined rods, bearings,
                     bushings or moulds manufactured from carbon, graphite, nylon, Delrin or

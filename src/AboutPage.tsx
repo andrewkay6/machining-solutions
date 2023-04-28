@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import facilityPicture from './images/facility.png'
 
 const About = () => {
     return (
@@ -31,6 +31,11 @@ const About = () => {
         our core business principles and striving for 100% customer satisfaction 
         will pave our path to growth and success.<br/>
         </p>
+
+        <div style={{display: "flex", justifyContent: "center"}}>
+                    <img src={facilityPicture} alt="Faculty" width="50%" height="auto"/>
+                </div>
+        
       <strong>Fair 
         pricing, fair labour rates and top notch customer care, that’s the 
         Machining Solutions difference!</strong><br/>

@@ -220,12 +220,19 @@ body {
 
 .page {
   margin-top: 2%;
-  max-width: 768px;
+  /* max-width: 768px; */
   flex-grow: 1;
 }
 
 .pageTitle {
   font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2%;
+  width: 100%;
+}
+.pageSubtitle{
+  font-size: 150%;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2%;
@@ -241,7 +248,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   flex-wrap: wrap;
-  max-width: 768px;
+  max-width: 1200px;
   
 }
 .productContainerOpen, .productContainerClosed {
@@ -286,6 +293,7 @@ body {
   margin: 2%;
   background-color: var(--headerColor);
   border-radius: 5px;
+  
 }
 
 .seeLessContainer {

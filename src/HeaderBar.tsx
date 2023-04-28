@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 interface Props {setPageState: (pageState: string) => void;}
 
 const HeaderBar = ({setPageState}: Props) => {
- 
 
   // Flatten the nested menuItems array
   const flattenedMenuItems = menuItems.reduce(

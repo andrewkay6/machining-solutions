@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import { ReactComponent as MenuIcon } from './images/menu.svg';
 import headerImage from './images/header.png';
 import HeaderBar from "./HeaderBar";
+import { Link } from "react-router-dom";
 interface Props {
     setIsMenuOpen: (isMenuOpen: boolean) => void;
     isMenuOpen: boolean;
@@ -29,9 +30,15 @@ const Header = ({ setIsMenuOpen, isMenuOpen, setPageState, pageState }: Props) =
     return (
         <>
         <div className={headerContainerClassName}>
-            <div className="headerImageContainer">
+            <Link className="headerImageContainer"
+                to="/"
+                onClick={() => {
+                    setPageState("");
+                    setIsMenuOpen(false);
+                }}
+                >
                 <img src={headerImage} alt="Header" className="headerImage" />
-            </div>
+            </Link>
             <div className="headerBarContainer">
                 <HeaderBar setPageState={setPageState}/>
             </div>

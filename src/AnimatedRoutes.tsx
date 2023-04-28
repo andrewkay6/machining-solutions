@@ -7,13 +7,17 @@ import ServicesPage from "./ServicesPage";
 
 import { AnimatePresence } from 'framer-motion'
 
-const AnimatedRoutes = () => {
+interface Props {
+    setPageState: (pageState: string) => void;
+}
+
+const AnimatedRoutes = ({ setPageState } : Props) => {
     const location = useLocation();
 
     return (
         <AnimatePresence >
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/" element={<HomePage setPageState={setPageState} />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/services" element={<ServicesPage />} />

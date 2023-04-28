@@ -1,7 +1,8 @@
 import {motion} from 'framer-motion'
 import Hero from './Hero';
 // import Gears from './Gears';
-const HomePage = () => {
+interface Props {setPageState: (pageState: string) => void;}
+const HomePage = ({setPageState} : Props) => {
 
     return (
         <motion.div 
@@ -11,19 +12,23 @@ const HomePage = () => {
             minHeight: "0vh"}}
             exit={{ display: "none" }}
         className="page"
-        style={{marginTop: "0"}}>
-            <Hero />
-            <div className="pageTitle">CNC Machining Toronto – Graphite Machining</div>
-            CNC graphite machining facility located in
-                Kitchener and serving the greater Toronto area and beyond. Custom machining
-                of all sizes carbon, graphite, nylon, Delrin and bronze parts. <p></p>
-                <p>&nbsp; </p>
-                <p><strong>Welcome
-                    to Machining Solutions</strong> Canada's
-                        Largest Dedicated Graphite CNC Machining Facility<br/>
-                </p>
-                
-                <p ><br/>
+        style={{marginTop: "0"}}> 
+            <Hero setPageState={setPageState} />
+
+                <div className='pageSubtitle' style={{fontWeight: "bold"}}>
+                    Welcome to Machining Solutions Canada's Largest Dedicated Graphite CNC Machining Facility
+                </div>
+                <div className='pageParagraph' style={{textAlign: "center"}}>
+                    We are a CNC graphite machining facility located in
+                    Kitchener and serving the greater Toronto area and beyond. We do custom machining
+                    of carbon, graphite, nylon, Delrin and bronze parts in all sizes. 
+                </div>
+                <br/>
+
+                <div className='pageSubtitle' style={{fontWeight: "bold"}}>
+                    Experience - Knowledge - Innovation
+                </div>
+                <div className='pageParagraph' >
                     Whether you are looking for production of custom CNC machined rods, bearings,
                     bushings or moulds manufactured from carbon, graphite, nylon, Delrin or
                     bronze or looking for a reliable source for carbon or graphite feeder
@@ -38,22 +43,25 @@ const HomePage = () => {
                     Solutions will work with you to determine the best grade of carbon or
                     graphite for your application as well as provide complete CAD CAM services
                     if required. Couple this with our unparalleled attention to customer service
-                    and you will quickly learn why so many Canadian companies are saying <strong>“NO”</strong>
-                    to brokerage fees, <strong>“NO”</strong> to high freight costs,
-                    <strong>“NO”</strong> to border delays by saying <strong>“YES”</strong>
-                    to Machining Solutions.</p>
-                <p><br/>
-                    <strong>Experience
-                        - Knowledge - Innovation <br/>
-                    <br/>
-                            CNC graphite machining facility located in Kitchener and
-                                serving the greater Toronto area and beyond. Custom machining of all sizes
-                                carbon, graphite, nylon, Delrin and bronze parts. </strong></p>
+                    and you will quickly learn why so many Canadian companies are saying:
+                    
+                    <br/><br/>
+                    <div className='pageParagraph' style={{textAlign: 'center'}}>
+                        <div> <b style={{color: "red"}}>NO</b> to brokerage fees </div>
+                        <div> <b style={{color: "red"}}>NO</b> to high freight costs </div>
+                        <div> <b style={{color: "red"}}>NO</b> to border delays </div>
+                        <br/>
+                        <div><b>by saying <b style={{color: "green"}}>YES</b> to Machining Solutions.</b></div>
 
-                <p><br/>
-                </p>
-                <p ><br/>
-                </p>
+                    </div>
+                     
+                    
+                    
+                </div>
+                <br/>
+                
+
+                
            
         </motion.div>
     );

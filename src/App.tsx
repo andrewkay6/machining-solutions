@@ -29,6 +29,10 @@ function App() {
   }, []);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pageState]);
+
+  useEffect(() => {
     if (isMenuOpen) {
       setAppContentClassName('appContentContainer displayOpenMenu');
       setFooterClassName('footerContainer displayOpenMenu');
@@ -64,7 +68,7 @@ function App() {
         />
 
         <div className={appContentClassName}>
-          <AnimatedRoutes/>
+          <AnimatedRoutes setPageState={setPageState}/>
         </div>
 
         <Footer className={footerClassName} />

@@ -212,6 +212,9 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 .menuItemButton .linkText:hover,
 .menuItemSelected {
@@ -379,6 +382,15 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+.contactInfoContainer{
+  font-size: 120%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: var(--headerColor);
+  border-radius: 5px;
+  padding: 2%;
+}
 .contactInfo{
   display: flex;
   flex-direction: column;
@@ -388,6 +400,7 @@ body {
   list-style-type: none;
   padding: 0;
 }
+
 
 .arrow {
   border: solid var(--menuIconColor);
@@ -511,7 +524,7 @@ body {
 
 .heroButton {
   all: unset;
-  background-color: rgba(0, 0, 0, 0.158);
+  background-color: rgba(255, 255, 255, 0.158);
   color: rgb(255, 255, 255);
   padding: 0.5%;
   text-align: center;
@@ -527,7 +540,7 @@ body {
   /* box-shadow: 2px 2px 4px #000000; */
 }
 .heroButton:hover {
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: rgba(255, 255, 255, 0.267);
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
@@ -540,6 +553,8 @@ body {
 }
 .creditSection{ 
   font-size: 70%;
+
+  box-sizing: border-box;
 }
 .clickableSVG { 
   max-height: 15px;

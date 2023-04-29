@@ -17,19 +17,17 @@ const WebsiteCredits = () => {
     return (
         <div className="creditSection" >
             <div>
-                Website made by Andrew Kay
-            </div>
-            
-            <div>
+                Website made by Andrew Kay&nbsp;
                 <GithubLogo
                     className="clickableSVG" 
-                    onClick={() => {handleGithubClick()}}
+                    onClick={() => {handleGithubClick()}} 
                 />
                 <LinkedInLogo
                     className="clickableSVG"
-                    onClick={() => {handleLinkedInClick()}}
-                />
+                    onClick={() => {handleLinkedInClick()}}/>
             </div>
+            
+        
         </div>
     );
 }

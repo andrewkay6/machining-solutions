@@ -22,7 +22,7 @@ const Footer = ({ className }: Props) => {
                     to={"/contact"}
                     className="footerContactText"
                 >
-                    Contact Us
+                    <b>Contact Us</b>
                 </Link>
 
             </div>

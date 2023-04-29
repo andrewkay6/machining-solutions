@@ -1,4 +1,4 @@
-import heroImage from "./images/hero.png";
+import heroImage from "./images/hero.jpeg";
 import { Link } from "react-router-dom";
 interface Props {setPageState: (pageState: string) => void;}
 

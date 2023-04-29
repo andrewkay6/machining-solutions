@@ -11,10 +11,10 @@ const About = () => {
       }}
       exit={{ display: "none" }}
     >
-      <div className="pageTitle">
+      <div className="pageTitle" style={{marginBottom:"0px"}}>
         About Us
       </div>
-      <div className="imageAndTextContainer">
+      <div className="imageAndTextContainer" >
         <div className="pageParagraph" style={{fontSize:"120%"}}>
           Founded
           in 2009 to provide finished carbon and graphite parts to the underserviced

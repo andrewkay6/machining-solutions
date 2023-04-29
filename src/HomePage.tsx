@@ -16,7 +16,7 @@ const HomePage = ({setPageState} : Props) => {
             <Hero setPageState={setPageState} />
 
                 <div className='pageSubtitle' style={{fontWeight: "bold"}}>
-                    Welcome to Machining Solutions Canada's Largest Dedicated Graphite CNC Machining Facility
+                    Welcome to Machining Solutions - Canada's Largest Dedicated Graphite CNC Machining Facility
                 </div>
                 <div className='pageParagraph' style={{textAlign: "center"}}>
                     We are a CNC graphite machining facility located in

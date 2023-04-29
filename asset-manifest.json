@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/machining-solutions/static/css/main.fbd70c82.css",
+    "main.js": "/machining-solutions/static/js/main.5892194b.js",
+    "static/js/787.d690d8f2.chunk.js": "/machining-solutions/static/js/787.d690d8f2.chunk.js",
+    "static/media/hero.jpeg": "/machining-solutions/static/media/hero.0ce78222787335fed2ee.jpeg",
+    "static/media/facility.png": "/machining-solutions/static/media/facility.8a0c7ac206fd3bb24f29.png",
+    "static/media/header.png": "/machining-solutions/static/media/header.d499b4f8c8e569ed73d9.png",
+    "static/media/graphite_hobby.gif": "/machining-solutions/static/media/graphite_hobby.1638ba97c01de0fde7f5.gif",
+    "static/media/graphite_rods.gif": "/machining-solutions/static/media/graphite_rods.18b214e277d1c1344dd8.gif",
+    "static/media/graphite_glass_tools.gif": "/machining-solutions/static/media/graphite_glass_tools.2431353473e0a20d108c.gif",
+    "static/media/graphite_bearings_and_bushings.gif": "/machining-solutions/static/media/graphite_bearings_and_bushings.f08a8bf87ca870d18b3f.gif",
+    "static/media/graphite_impeller.gif": "/machining-solutions/static/media/graphite_impeller.642e9efa316d80dfb2e3.gif",
+    "static/media/graphite_powder.gif": "/machining-solutions/static/media/graphite_powder.cb95d136407639cf1742.gif",
+    "static/media/graphite_r_and_d.gif": "/machining-solutions/static/media/graphite_r_and_d.cb9b5df85f46e6dd7264.gif",
+    "static/media/graphite_crucible.gif": "/machining-solutions/static/media/graphite_crucible.75d3eda92fcdfd9a0a85.gif",
+    "static/media/graphite_seals.gif": "/machining-solutions/static/media/graphite_seals.ff0bb8895cf6a0b5b63e.gif",
+    "static/media/graphite_mould.gif": "/machining-solutions/static/media/graphite_mould.8b79f6ea17d3f06f7140.gif",
+    "static/media/graphite_seg_seal.gif": "/machining-solutions/static/media/graphite_seg_seal.f9e766b8de49ebabc4cb.gif",
+    "static/media/graphite_electric_contact.gif": "/machining-solutions/static/media/graphite_electric_contact.675cd6d948baa2d24946.gif",
+    "static/media/graphite_pump_vanes.gif": "/machining-solutions/static/media/graphite_pump_vanes.0a4821cd1550d1ec457c.gif",
+    "static/media/graphite_jewelry.gif": "/machining-solutions/static/media/graphite_jewelry.71cdff45206a1c0a7b78.gif",
+    "static/media/menu.svg": "/machining-solutions/static/media/menu.3aa44b827611432376b8bf6d4babf700.svg",
+    "index.html": "/machining-solutions/index.html",
+    "static/media/github.svg": "/machining-solutions/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/linkedin.svg": "/machining-solutions/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
+    "main.fbd70c82.css.map": "/machining-solutions/static/css/main.fbd70c82.css.map",
+    "main.5892194b.js.map": "/machining-solutions/static/js/main.5892194b.js.map",
+    "787.d690d8f2.chunk.js.map": "/machining-solutions/static/js/787.d690d8f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbd70c82.css",
+    "static/js/main.5892194b.js"
+  ]
+}

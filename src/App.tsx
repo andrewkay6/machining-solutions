@@ -5,7 +5,6 @@ import AnimatedRoutes from './AnimatedRoutes';
 import Dropdown from './Dropdown';
 import Footer from './Footer';
 import Menu from './Menu';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

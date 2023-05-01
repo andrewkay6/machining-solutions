@@ -5,6 +5,7 @@ html {
 
 :root {
   --headerColor: rgb(231, 240, 250);
+  --highlightColor: rgb(231, 240, 250);
   --headerHoverColor: rgb(224, 234, 245);
   --footerColor: rgb(196, 215, 235);
   --menuIconColor: rgb(5, 72, 127);
@@ -63,7 +64,7 @@ body {
 
 
 .headerImage {
-  max-width: calc(110px + 18vw);
+  max-width: calc(140px + 12vw);
   min-height: 80px;
   /* max-width: 100%; */
 
@@ -251,11 +252,10 @@ a, a:visited, a:hover, a:active {
   width: 100%;
 }
 .pageParagraph{
-  padding-left: 1%;
-  padding-right: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
   font-size: 100%;
-  text-align: justify;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -601,14 +601,12 @@ a, a:visited, a:hover, a:active {
   padding: 2%;
   box-sizing: border-box;
   font-size: 100%;
-  text-align: justify;
   justify-content: center;
   align-items: center;
   text-justify: inter-word;
   line-height: 1.5;
   font-weight: normal;
   color: var(--textColor);
-  background-color: var(--backgroundColor);
   border-radius: 5px;
   height: 100%;
 
@@ -626,5 +624,12 @@ a, a:visited, a:hover, a:active {
   .imageAndTextContainer > * {
     width: 100%;
   }
+}
+.coloredBackground {
+  background: var(--highlightColor);
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 2%;
 }
   

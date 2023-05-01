@@ -46,7 +46,7 @@ function App() {
   }, [isMenuOpen]);
 
   return (
-    <Router>
+
       <div className={appContainerClassName}>
         <Header
           setIsMenuOpen={setIsMenuOpen}
@@ -73,7 +73,7 @@ function App() {
 
         <Footer className={footerClassName} />
       </div>
-    </Router>
+  
   );
 }
 

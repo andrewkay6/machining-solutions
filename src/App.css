@@ -195,11 +195,7 @@ body {
     padding-top: 20%;
   }
 }
-@media  and (max-height: 200px){
-  .menuContainer{
-    padding-top: 50%;
-  }
-}
+
   
 
 
@@ -402,6 +398,8 @@ a, a:visited, a:hover, a:active {
   background: var(--headerColor);
   border-radius: 5px;
   padding: 2%;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
 .contactInfo{
   display: flex;
@@ -522,6 +520,9 @@ a, a:visited, a:hover, a:active {
   .heroTextContainer {
     font-size: 150%;
   }
+  /* .contactInfoContainer{
+    font-size: 80%;
+  } */
 }
 @media screen and (max-width: 410px) {
   .heroTextContainer {

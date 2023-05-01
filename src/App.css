@@ -99,9 +99,7 @@ body {
 
 .menuIcon {
 
-  /* max-height: calc(5px + 5vh); */
   max-width: calc(10px + 4vw);
-  /* min-height: 30px; */
   height: auto;
   align-self: center;
   cursor: pointer;
@@ -167,6 +165,7 @@ body {
   position: absolute;
   height: 100vh;
   top: 0;
+  font-size: calc(6px + 2vh);
 }
 
 .dropdownMain {
@@ -191,6 +190,18 @@ body {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+@media screen and (max-height: 400px){
+  .menuContainer{
+    padding-top: 20%;
+  }
+}
+@media  and (max-height: 200px){
+  .menuContainer{
+    padding-top: 50%;
+  }
+}
+  
+
 
 .menuItemButton{
   all: unset;
@@ -538,7 +549,6 @@ a, a:visited, a:hover, a:active {
   cursor: pointer;
   text-shadow: none;
   font-weight: normal;
-  /* box-shadow: 2px 2px 4px #000000; */
 }
 .heroButton:hover {
   background-color: rgba(255, 255, 255, 0.267);
@@ -574,7 +584,6 @@ a, a:visited, a:hover, a:active {
   max-width: 100%;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
   
 }
 
@@ -600,8 +609,6 @@ a, a:visited, a:hover, a:active {
   color: var(--textColor);
   background-color: var(--backgroundColor);
   border-radius: 5px;
-  /* box-shadow: 2px 2px 4px #000000; */
-
   height: 100%;
 
 

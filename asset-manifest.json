@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/machining-solutions/static/css/main.fbd70c82.css",
-    "main.js": "/machining-solutions/static/js/main.5892194b.js",
+    "main.css": "/machining-solutions/static/css/main.10f192aa.css",
+    "main.js": "/machining-solutions/static/js/main.37c75c75.js",
     "static/js/787.d690d8f2.chunk.js": "/machining-solutions/static/js/787.d690d8f2.chunk.js",
     "static/media/hero.jpeg": "/machining-solutions/static/media/hero.0ce78222787335fed2ee.jpeg",
     "static/media/facility.png": "/machining-solutions/static/media/facility.8a0c7ac206fd3bb24f29.png",
@@ -24,12 +24,12 @@
     "index.html": "/machining-solutions/index.html",
     "static/media/github.svg": "/machining-solutions/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
     "static/media/linkedin.svg": "/machining-solutions/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
-    "main.fbd70c82.css.map": "/machining-solutions/static/css/main.fbd70c82.css.map",
-    "main.5892194b.js.map": "/machining-solutions/static/js/main.5892194b.js.map",
+    "main.10f192aa.css.map": "/machining-solutions/static/css/main.10f192aa.css.map",
+    "main.37c75c75.js.map": "/machining-solutions/static/js/main.37c75c75.js.map",
     "787.d690d8f2.chunk.js.map": "/machining-solutions/static/js/787.d690d8f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbd70c82.css",
-    "static/js/main.5892194b.js"
+    "static/css/main.10f192aa.css",
+    "static/js/main.37c75c75.js"
   ]
 }

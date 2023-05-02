@@ -157,7 +157,7 @@ body {
   position: absolute;
   height: 100vh;
   top: 0;
-  font-size: calc(6px + 2vh);
+  font-size: calc(8px + 1vh);
 }
 
 .dropdownMain {

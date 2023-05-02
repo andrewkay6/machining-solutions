@@ -422,6 +422,11 @@ a:active {
   padding: 0;
 }
 
+.contactInfo li {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
 
 .arrow {
   border: solid var(--menuIconColor);

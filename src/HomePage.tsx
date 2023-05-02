@@ -28,7 +28,7 @@ const HomePage = ({setPageState} : Props) => {
                 <div className='pageSubtitle' style={{fontWeight: "bold"}}>
                     Experience - Knowledge - Innovation
                 </div>
-                <div className='pageParagraph' >
+                <div className='pageParagraph' style={{textAlign: "center"}}>
                     Whether you are looking for production of custom CNC machined rods, bearings,
                     bushings or moulds manufactured from carbon, graphite, nylon, Delrin or
                     bronze or looking for a reliable source for carbon or graphite feeder
